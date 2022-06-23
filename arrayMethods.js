@@ -85,7 +85,7 @@ const monstersInYourPocket = [{"monster":"Bulbabunny","CP":156},{"monster":"Bulb
 */
 
 // CODE HERE
-const myStrongest  = monstersInYourPocket.filter((element,i) => element['CP'] > 200)
+const myStrongest  = monstersInYourPocket.filter(element => element.CP > 200)
 //console.log(myStrongest)
 
 
@@ -104,7 +104,7 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 // CODE HERE
-const totals = orders.map((element, i) => element['price'] * (element['tax'] + 1))
+const totals = orders.map(element => element['price'] * (element['tax'] + 1))
 
 //console.log(totals)
 
